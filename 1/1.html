@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Fanzine Jam #1</title>
+
+	<meta name="twitter:title" content="Fanzine Jam">
+	<meta name="twitter:image" content="http://fanzinejam.com/1/FANZINEJAM_WEB_1.jpg">
+
+	<meta property="og:title" content="Fanzine Jam" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.fanzinejam.com/" />
+	<meta property="og:image" content="http://fanzinejam.com/1/FANZINEJAM_WEB_1.jpg" />
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="scripts/jquery-3.2.0.min.js"></script>
+	<script src="scripts/jquery.zoomooz.js"></script>
+</head>
+<body>
+	<div class="zoomViewport viewport">
+    <div class="zoomContainer" id="container">
+		</div>
+	</div>
+	<div class="zoomButton button buttonPrev" data-type="prev" data-root=".zoomViewport"></div>
+	<div class="zoomButton button buttonNext" data-type="next" data-root=".zoomViewport"></div>
+	<a href="index.html"><div class="buttonHome">#</div></a>
+
+	<script>
+	var content = "";
+	for (var page = 1; page <= 86; ++page) {
+		var clas = 'zoomTarget cell rotate' + Math.ceil(Math.random()*6) + ( Math.random() < .5 ? '' : 'minus' );
+		content += '<div class="'+clas+'" data-closeclick="true"><img src="1/FANZINEJAM_WEB_'+page+'.jpg"></div>';
+	}
+	document.getElementById("container").innerHTML = content;
+	</script>
+</body>
+</html>

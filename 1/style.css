@@ -1,0 +1,133 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+html, body
+{
+	height:100%;
+	background: white;
+	font-family: sans-serif;
+	text-align: center;
+}
+.home
+{
+	background: black no-repeat center url("images/cover.png");
+	background-size: contain;
+}
+
+.menu
+{
+}
+
+.menu .cover
+{
+	display: inline-block;
+	width:256px;
+	height:256px;
+	margin: 24px;
+	background: no-repeat center url("images/cover.jpg");
+	background-size: contain;
+	position: relative;
+}
+.menu .cover img
+{
+	width:256px;
+	height:256px;
+}
+
+.menu .pastille
+{
+	position: absolute;
+	bottom:4px;
+	right:4px;
+	width:40px;
+	height:40px;
+	background: no-repeat center url("images/red.png");
+	background-size: contain;
+}
+
+.menu .number
+{
+	min-height: 10em;
+  display: table-cell;
+	color: white;
+	width:40px;
+	height:40px;
+  vertical-align: middle;
+}
+
+.viewport
+{
+	display: block;
+	width: 100vw;
+	height: 100vh;
+  overflow-x: hidden;
+}
+
+.container
+{
+}
+
+.cell
+{
+	display: inline-block;
+}
+
+.cell img
+{
+	width: 256px;
+	margin: 20px;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.24);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.24);
+}
+
+.button
+{
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	top: 50vh;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.buttonPrev
+{
+	left: 24px;
+	background: no-repeat center url("images/left.png");
+}
+
+.buttonNext
+{
+	right: 24px;
+	background: no-repeat center url("images/right.png");
+}
+
+.buttonHome
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	cursor: pointer;
+	background: no-repeat center url("images/home.png");
+}
+
+.rotate1 { -ms-transform: rotate(1deg); -webkit-transform: rotate(1deg); transform: rotate(1deg); }
+.rotate2 { -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg); transform: rotate(2deg); }
+.rotate3 { -ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg); }
+.rotate4 { -ms-transform: rotate(4deg); -webkit-transform: rotate(4deg); transform: rotate(4deg); }
+.rotate5 { -ms-transform: rotate(5deg); -webkit-transform: rotate(5deg); transform: rotate(5deg); }
+.rotate6 { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); }
+.rotate1minus { -ms-transform: rotate(-1deg); -webkit-transform: rotate(-1deg); transform: rotate(-1deg); }
+.rotate2minus { -ms-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); transform: rotate(-2deg); }
+.rotate3minus { -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg); }
+.rotate4minus { -ms-transform: rotate(-4deg); -webkit-transform: rotate(-4deg); transform: rotate(-4deg); }
+.rotate5minus { -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
+.rotate6minus { -ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg); }
